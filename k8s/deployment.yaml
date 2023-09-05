@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rtrfdfew4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rtrfdfew4
+  template:
+    metadata:
+      labels:
+        app: rtrfdfew4
+    spec:
+      containers:
+      - image: okteto.dev/rtrfdfew4:latest
+        name: rtrfdfew4
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "6093b070-8bf2-472d-936a-107e57a084db"
+        - name: Vless_Path
+          value: "/jdiedi345"
+        - name: Vmess_UUID
+          value: "6093b070-8bf2-472d-936a-107e57a084db"
+        - name: Vmess_Path
+          value: "/dgretdf345"
+        - name: Share_Path
+          value: "/v2link"
